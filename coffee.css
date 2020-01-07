@@ -1,0 +1,103 @@
+body {
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-color: #faf6eb;
+  background-attachment: fixed;
+  overflow: hidden;
+  margin: 0;
+}
+
+.parent {
+  position: relative;
+  bottom: 0px;
+  left: 0x;
+}
+
+.image1 {
+  position: relative;
+  top: 570px;
+  left: 0px;
+  width: 110%;
+  height: auto;
+}
+
+
+.image2 {
+  position: absolute;
+  top: 270px;
+  left: 30%;
+}
+
+.image3 {
+  position: absolute;
+  top: 400px;
+  left: 42%;
+  width: 30px;
+  height: auto;
+  animation: myanimation 5s, spin 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+
+}
+
+.image4 {
+  position: absolute;
+  top: 400px;
+  left: 48%;
+  width: 30px;
+  height: auto;
+  -webkit-animation:spin 2s linear infinite;
+  -moz-animation:spin 2s linear infinite;
+  animation:spin 2s linear infinite;
+  animation: myanimation 3s, spin 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.image5 {
+  position: absolute;
+  top: 435px;
+  left: 54%;
+  width: 30px;
+  height: auto;
+  -webkit-animation:spin 2s linear infinite;
+  -moz-animation:spin 2s linear infinite;
+  animation:spin 2s linear infinite;
+  animation: myanimation 4s, spin 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.image6 {
+  position: absolute;
+  top: 270px;
+  left: 30%;
+}
+
+@-moz-keyframes spin {
+  100% {
+    -moz-transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg); transform:rotate(360deg);
+  }
+}
+
+
+@keyframes myanimation
+{
+  0% {
+     top:-50px;
+ }
+ 100% {
+     top: 400px;
+ }
+}

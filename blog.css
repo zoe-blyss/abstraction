@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+}
+
+.blog{
+  width: 100vw;
+  height: auto;
+}
+
+
+.parent {
+  position: relative;
+  bottom: 0px;
+  left: 0px;
+}
+
+.image1 {
+  position: relative;
+  bottom: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+
+.image2 {
+  position: absolute;
+  left: 40%;
+  top: 500px;
+  width: 200px;
+  height: auto;
+  -webkit-animation:spin 10s linear infinite;
+  -moz-animation:spin 10s linear infinite;
+  animation:spin 10s linear infinite;
+}
+
+.image3 {
+  position: absolute;
+  bottom: 20px;
+  width: 150px;
+  height: auto;
+  left: 82vw;
+  animation: myanimation 10s;
+}
+
+
+.click-activate {
+  position: absolute;
+  width: 100%;
+  bottom: 85px;
+  height: 315px;
+}
+
+.button {
+  position: absolute;
+  bottom: 35px;
+  right: 135px;
+  opacity: 0;
+}
+
+
+.click-activate:hover > .button {
+  overflow: hidden;
+  position: absolute;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+
+}
+
+
+
+.grow { transition: all .2s ease-in-out; }
+
+.grow:hover { transform: scale(1.5); }
+
+
+@-moz-keyframes spin {
+  100% {
+    -moz-transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg); transform:rotate(360deg);
+  }
+}
